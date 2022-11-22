@@ -1,0 +1,13 @@
+{
+  "files": {
+    "main.css": "/Lens-Thickness-Calc/static/css/main.7806062e.css",
+    "main.js": "/Lens-Thickness-Calc/static/js/main.8fa7022d.js",
+    "index.html": "/Lens-Thickness-Calc/index.html",
+    "main.7806062e.css.map": "/Lens-Thickness-Calc/static/css/main.7806062e.css.map",
+    "main.8fa7022d.js.map": "/Lens-Thickness-Calc/static/js/main.8fa7022d.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.7806062e.css",
+    "static/js/main.8fa7022d.js"
+  ]
+}
