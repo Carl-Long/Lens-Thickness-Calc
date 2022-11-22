@@ -1,38 +1,228 @@
-.App {
-  text-align: center;
+* {
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+body {
+  background-color: rgba(129, 255, 83, 0.3);
+  padding-bottom: 100px;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+button {
+  background-color: #014515;
+  color: white;
+  border-radius: 4px;
+  border: solid 1px black;
+  height: 23px;
+  width: 30px;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+button:active {
+  background-color: rgba(129, 255, 83, 0.4);
+  color: black;
+}
+
+.Title {
+  background-color: #014515;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
+  font-size: calc(8px + 2vmin);
   color: white;
+  text-shadow: 2px 2px black;
 }
 
-.App-link {
-  color: #61dafb;
+.Container {
+  height: auto;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+.Subcontainer {
+  width: 90%;
+  max-width: 1400px;
+  min-width: 950px;
+  margin: auto;
+  border-radius: 8px;
+  margin-top: 20px;
+  border: 2px solid #014515;
+  border-top: none;
+  background-color: white;
+  box-shadow: 2px 2px 2px 1px dimgray;
+}
+
+.Heading {
+  font-size: 2rem;
+  color: white;
+  background-color: #014515;
+  text-align: center;
+  border-top-left-radius: 8px;
+  border-top-right-radius: 8px;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  text-shadow: 2px 2px black;
+}
+
+.Eye {
+  font-size: 1.2rem;
+  font-weight: 550;
+  margin-right: 5px;
+}
+
+.Label {
+  font-size: 1rem;
+  font-weight: 400;
+  margin-inline: 5px;
+}
+
+.RxInputs {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.FrameInputs {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.input {
+  width: 10%;
+  height: 20px;
+  text-align: center;
+  margin-inline: 5px;
+  border: solid 1px dimgray;
+  background-color: whitesmoke;
+  border-radius: 4px;
+}
+
+.Dropdown {
+  width: 13%;
+  height: 25px;
+  text-align: center;
+  margin-inline: 5px;
+  background-color: #014515;
+  color: white;
+  border-radius: 12px;
+  border: solid 1px black;
+}
+
+.Results {
+  display: flex;
+}
+
+.ResultRight {
+  width: 50%;
+  text-align: center;
+  padding-inline: 40px;
+  border-right: dotted 2 px grey;
+}
+
+.ResultLeft {
+  width: 50%;
+  text-align: center;
+  padding-inline: 40px;
+  border-left: 2px dotted grey;
+}
+
+
+/* Responsive CSS */
+
+@media only screen and (max-width: 1000px) {
+
+  .Subcontainer {
+    min-width: 700px;
   }
-  to {
-    transform: rotate(360deg);
+
+  .input {
+    width: 5%;
+    height: 20px;
+    text-align: center;
+    margin-inline: 5px;
+    border: solid 1px dimgray;
+    background-color: whitesmoke;
+    border-radius: 4px;
+  }
+
+}
+
+@media only screen and (max-width: 700px) {
+
+
+  .Title {
+    font-size: 3vw;
+    padding-top: 5px;
+    padding-bottom: 5px;
+  }
+
+  .Heading {
+    font-size: 1.3rem;
+  }
+
+  .Eye {
+    font-size: 1.1rem;
+    margin-inline: 0;
+    text-align: center;
+  }
+
+  .Subcontainer {
+    min-width: 0px;
+    text-align: center;
+  }
+
+  .input {
+    width: 50%;
+    height: 25px;
+    font-size: 1rem;
+    justify-content: center;
+  }
+
+  .RxInputs {
+    display: block;
+    margin-bottom: 10px;
+  }
+
+  .Label {
+    display: block;
+    text-align: center;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    margin-inline: 0;
+  }
+
+  .FrameInputs {
+    display: block;
+  }
+
+  .Dropdown {
+    width: 80%;
+    height: 30px;
+    margin-inline: 10%;
+    margin-bottom: 10px;
+    margin-top: 10px;
+  }
+
+
+  .Results{
+    display: block;
+    margin: 0;
+    padding: 0;
+  }
+
+  .ResultLeft{
+    width: auto;
+    margin: 0;
+    padding: 0;
+    border: none;
+  }
+
+  .ResultRight{
+    width: auto;
+    margin: 0;
+    padding: 0;
+  }
+
+  button{
+    width: 15%;
+    height: 40px
   }
 }
